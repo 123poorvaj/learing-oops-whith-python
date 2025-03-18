@@ -1,0 +1,7 @@
+marks=int(input("enter a mark>>"))
+if marks<35:
+    print("you are fail")
+elif marks<85:
+    print("you are pass")
+else:
+    print("distinction")
