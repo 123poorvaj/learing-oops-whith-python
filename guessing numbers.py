@@ -1,10 +1,10 @@
 import random
-sse=random.randint(1,3)
+gift_num=random.randint(1,3)
 print(sse)
 chanse=1
 while(True):
     guessnum=int(input("guess the number>>"))
-    if  guessnum==sse :
+    if  guessnum==gift_num:
         print("congratulation you get write answer")
         break
     else:
