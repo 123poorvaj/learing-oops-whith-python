@@ -1,0 +1,22 @@
+# srint access and length
+#syntax of the sring acces is (veriable[starting:end:skip])
+
+#length is used to find the how many elements prasent and speace also including in that line.
+#syntax of the length is (len(verivable))
+
+def length():
+    print(len(your_massege))
+
+def access():
+    print(your_massege[1: :3])
+
+your_massege=input("enter your massege>>")
+print("1,length / 2,access")
+option=int(input("enter your option>>"))
+if option==1:
+    length()
+elif option==2:
+    access()
+else: 
+    print("your option is wrong.only 2 option is available ")
+
