@@ -1,0 +1,18 @@
+
+#>> this code is based converstion of string in capitl later into small later
+#>>syntax (variable.lower())
+#a="THE KING"
+#print(a.lower()) # o/p:the king
+
+
+#>> this code is based converstion of string in small later into capital later
+#>>syntax (variable.upper())
+#a="the king"
+#print(a.upper()) # o/p:THE KING
+
+##>> this code is based converstion of sring  both (capitl later and small later)
+#>>syntax (variable.swapcase())
+a="the KING"
+print(a.swapcase())
+
+
