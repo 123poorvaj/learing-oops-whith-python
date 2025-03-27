@@ -1,0 +1,30 @@
+# list means calection of elements at any data type and elements are plased inside the closed bracket.it is index type 
+#syntax [ 1,"b",1.2,]  =print(variabel[index]
+
+#pop and remove is use to remove the elemente.this two are destini is same but charecteristics is different
+#pop works based on index ,but remove works based on  value.
+
+#insert is used to add the element in the list.
+#insret  syntax is print(index,"inserted value") 
+
+
+def remove_the_element():
+    print(elements.remove("3.4"))
+def pop_the_elemenet():
+    print(elements.pop[0])
+
+def insert_the_new_element():
+    print(elements[2,"king"])    
+
+
+elements=[1 , 3 , 3.4 , "peace"]
+print("option= 1 is remove , 2 is pop  , 3 is insert")
+option=(int(input("enter your option >> ")))
+if option==1:
+   remove_the_element()
+elif option==2:
+    pop_the_elemenet()
+elif option==3:
+    insert_the_new_element() 
+else:
+    print("opttion is wrong")       
