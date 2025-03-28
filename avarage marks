@@ -1,0 +1,10 @@
+n=int(input("name>> "))
+student_marks={ }
+for i in range(n):
+    name,*line =input().split()
+    score=list(map(float, line))
+    student_marks[name]=score
+    query_name= input()
+
+recordes=sum(student_marks[query_name])/3
+print("%.2f"%recordes)
