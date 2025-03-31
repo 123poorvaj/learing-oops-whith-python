@@ -1,0 +1,9 @@
+#python swaping.and formated string
+#use any data type
+a=input("enter the a value>> ")
+b=input("enter the b value>> ")
+def swap(x,y):
+    x,y=y,x
+swap(b,a)
+print(" after swaping")
+print(f"a={b} b={a}")
