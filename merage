@@ -1,0 +1,13 @@
+k=input("enter k>>")
+str=input("enter s>>")
+for i in (0,len(str),k):
+    substring=str[i:i+k]
+    gre=set()
+    result=""
+for char in substring:
+    if char  not in gre:
+        gre.add(char)
+        result+=char
+    print(result)
+
+
