@@ -1,0 +1,13 @@
+class mobile:
+      def __init__(self,brand ,price):
+        self.brand=brand
+        self.price=price
+
+      def sel(self):
+        print(f"mobile brand is {self.brand} and price is{self.price}")
+        
+        
+mobile1=mobile("oppo",90)
+mobile2=mobile("reami",45)
+mobile1.sel()
+mobile2.sel()
