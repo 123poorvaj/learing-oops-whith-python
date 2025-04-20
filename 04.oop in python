@@ -1,0 +1,22 @@
+
+#quatoin Add Default Parameters:
+
+#Create a class Employee with attributes name, designation, and salary (default value of salary is 30,000).
+#Write a method that displays the details of each employee.
+#Create multiple Employee objects with different values for name and designation, and test the default salary behavior.
+
+class employce:
+      def __init__(self,name,designation,sallary=30000):
+        self.name=name
+        self.designation=designation
+        self.sallary=sallary
+
+      def details(self):
+         print(f"employ name is {self.name} ,designationis {self.designation} and sallary is {self.sallary}")  
+
+employ1=employce("pooja","coding",50000)
+employ2=employce("gaja","forming", )
+
+employ1.details()
+employ2.details()
+
