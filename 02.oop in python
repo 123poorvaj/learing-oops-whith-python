@@ -1,0 +1,15 @@
+class student:
+      def __init__(self,name ,mark):
+        self.name=name
+        self.mark=mark
+
+      def display_info(self):
+        print(f"student name is {self.name} and marks is {self.mark}")
+        
+        
+student1=student("poorvaj",356)
+student2=student("pooja",511)
+
+
+student1.display_info()
+student2.display_info()
