@@ -1,0 +1,18 @@
+class bankaccount:
+     def __init__(self,accountnum,balance):
+        self.accountnum=accountnum
+        self.__balance=balance
+
+     def deposit(self,amount):
+        self.__balance +=amount
+        print(f"deposit amount is {amount},new balance {self.__balance} ")
+
+     def withdrow(self,amount):
+        if self.__balance<=self.__balance:
+           self.__balance-=amount
+        print(f"withdrow amount is {amount},new balance {self.__balance}")
+        
+accountnum1=bankaccount(3456,23000)
+accountnum1.withdrow(500)
+accountnum1.deposit(500)
+
