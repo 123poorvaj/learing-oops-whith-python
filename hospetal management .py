@@ -2,17 +2,43 @@ class patients:
     def __init__(self):
         self.name=input("Enter your name >>")
         self.age=int(input("Enter your age >>"))
+
+class pementblock:
+    def __init__(self):
         self.__pement=0
 
     def pement_(self):
         amount = int(input("pay the amount"))
-        self.__pement+= amount
+        self.__pement += amount
         print(f'you pay {amount} amount')
 
     def get_pement(self):
         return self.__pement
 
-class docter(appointment):
+
+class booking(patients,pementblock):
+    def __init__(self):
+        patients.__init__(self)
+        self.__booking=0
+    def book(self):
+        n=30-self.__booking
+        print(f" remaining steats are {n}")
+        place=int(input(f"Enter how many seats you book (only {n} number of seats is allowed) >>"))
+        if n>=place:
+            self.__booking +=place
+            c=pementblock()
+            print(f"you pay the amount {n * 120}")
+            c.pement_()
+            print(f" {place} seats are successfully  booked")
+        else:
+            print(f" seats are  not available")
+            exit()
+    def get_book(self):
+        return  self.__booking
+
+
+class docter:
+    
     def docter():
         print("1,Dr pattile as a dentist surgeons")
         print("2,Dr sunil as a  fear  surgeons")
@@ -24,6 +50,7 @@ class docter(appointment):
         match option:
             case 1:
                 print("Dr pattile avilabel in coming at 8:30 AM")
+
             case 2:
                 print("Dr sunil avilabel in coming at 10:30 AM")
             case 3:
@@ -34,19 +61,22 @@ class docter(appointment):
                 print("Dr nagesh  avilabel in coming at 7:30 PM to 5 :30 AM")
             case _:
                 print("enter valied option try again")
-                docter()
+                docter.docter()
         try:
-            key=int(input("if take a appointment enter 1 else enter  2>>>"))
+            key=int(input("if you take the apppointement number 1 else enter 2>>>"))
         except ValueError:
             print("enter only number 1 or 2 ,alphabetical latters are not accepted")
 
         if key==1:
-            p=patients()
-            pe=int(input("you pay the amount enter 1 or 2"))
-            if pe==1:
-                p.pement_()
+            book=int(input("if you book the  sites enter 1 else enter 2 >>"))
+            if book==1:
+                q=booking()
+                q.book()
+            elif book==2:
+                print("OK BYEEE=")
             else:
-                print("ok  byeee......")
+                print("valide option try again")
+
         elif key==2:
             print("ok bye.........")
         else:
