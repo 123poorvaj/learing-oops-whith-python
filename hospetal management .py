@@ -38,7 +38,7 @@ class booking(patients,pementblock):
 
 
 class docter:
-    
+
     def docter():
         print("1,Dr pattile as a dentist surgeons")
         print("2,Dr sunil as a  fear  surgeons")
