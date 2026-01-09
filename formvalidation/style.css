@@ -1,0 +1,45 @@
+.bg-container {
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 10px gray;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    background-size: cover;
+    font-family: 'roboto';
+}
+
+.formsheet-top-section {
+    background-color: aqua;
+    background-size: cover;
+    padding: 7px;
+}
+
+.main-heading {
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+
+.form-top-sectiom-content {
+    margin: 5px;
+}
+
+h4 {
+    color: black;
+    font-size: 24px;
+}
+
+.topinput-box {
+    width: 450px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 400
+}
+
+input,
+select,
+textarea:focus {
+    outline-color: rgb(71, 128, 241);
+}
